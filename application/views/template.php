@@ -13,6 +13,13 @@
   <link rel="stylesheet" href="assets/stylesheets/screen.css">
   <link rel="stylesheet" href="assets/stylesheets/icons.css">
 
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+  <meta property="og:image" content="assets/images/logo_og.png">
+  <meta property="og:title" content="<?php echo $title; ?>">
+  <meta property="og:url" content="<?php echo Request::current()->uri(); ?>">
+
 </head>
 <body class="template-<?php echo $template; ?>">
 

@@ -9,14 +9,14 @@ button {
 }
 
 ::-moz-selection {
-  color: $background;
-  background: $color;
+  color: #fff;
+  background: #c32;
   text-shadow: none;
 }
 
 ::selection {
-  color: $background;
-  background: $color;
+  color: #fff;
+  background: #c32;
   text-shadow: none;
 }
 
