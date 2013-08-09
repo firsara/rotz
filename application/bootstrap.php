@@ -117,6 +117,7 @@ Kohana::init(array(
 if (strpos($_SERVER['HTTP_HOST'], 'www') !== false)
 {
   header('Location: http://'.str_replace('www.', '', $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']));
+  exit();
 }
 
 Cookie::$salt = base64_encode(md5(md5('rotzprojekt')));
