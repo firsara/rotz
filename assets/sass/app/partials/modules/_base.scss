@@ -1,0 +1,358 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+}
+
+.container-fluid {
+  position: relative;
+  max-width: 9999px;
+}
+
+#header {
+  background: #262626;
+  height: 64px;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+
+  @include respond-to(wide) {
+    border-bottom: 30px solid #fff;
+
+    .template-project_detail & {
+      border-bottom: none;
+    }
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+    line-height: 1em;
+  }
+
+  .home img {
+    display: block;
+    width: 25px;
+    height: auto;
+    margin-right: 15px;
+    position: relative;
+    top: -2px;
+    float: left;
+  }
+
+
+  h1 {
+    font-size: 15px;
+    margin-top: -5px;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 10px;
+    padding: 0;
+    margin-top: 5px;
+  }
+
+  .home .text {
+    display: block;
+    float: left;
+  }
+
+
+  .home {
+    padding: 20px 0;
+    display: block;
+    float: left;
+
+    @include transition(opacity 300ms ease);
+
+    &:hover {
+      opacity: 0.5;
+      color: #fff;
+    }
+  }
+}
+
+
+
+#nav {
+  float: right;
+
+  li {
+    float: left;
+  }
+
+  a {
+    display: block;
+    padding: 26px 10px 26px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 400;
+    @include transition(all 300ms ease);
+
+    &:hover,
+    &.active {
+      background: #c32;
+      color: #fff;
+    }
+  }
+}
+
+
+#content {
+  margin: 0.5%;
+  padding: 80px 0 80px;
+  margin-bottom: 80px;
+  @include clearfix();
+
+
+  color: #262626;
+
+  a {
+    color: #c32;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+#footer {
+  background: #262626;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  width: 100%;
+
+  @include respond-to(wide) {
+    border-top: 30px solid #fff;
+
+    .template-project_detail & {
+      border-top: none;
+    }
+  }
+
+  h3 {
+    text-align: left;
+    font-size: 13px;
+
+    a {
+      display: block;
+      padding: 10px;
+    }
+  }
+}
+
+
+.projects {
+  margin: 0 -1.5%;
+}
+
+#content {
+  .project {
+    float: left;
+    position: relative;
+    margin: 1%;
+    width: 48%;
+    cursor: pointer;
+
+    @include respond-to(mobile) {
+      width: 98%;
+    }
+
+    @include respond-to(wide) {
+      width: 31.332%;
+    }
+
+    figure,
+    figure img {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    figure {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      @include box-sizing(border-box);
+      border: 10px solid #262626;
+
+      @include transition(border 300ms ease);
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      color: #000;
+      opacity: 0;
+      @include transition(all 300ms ease);
+      @include transform(scale(1.4));
+      @include ease-out-back;
+
+      &.visible {
+        opacity: 1;
+        @include transform(scale(1));
+      }
+    }
+
+    figcaption p {
+      text-transform: uppercase;
+      font-size: 20px;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+
+
+    figure img {
+      opacity: 1;
+      @include hardware-animation;
+      @include transition(all 300ms ease);
+      @include ease-out-back;
+    }
+
+    figure:hover {
+      border: 10px solid #666;
+
+      img {
+        opacity: 0.35;
+        @include transform(scale(1.1));
+      }
+
+      .overlay {
+        opacity: 1;
+        @include transform(scale(1));
+      }
+    }
+  }
+
+  .hate {
+    display: block;
+    padding: 30px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: #262626;
+
+    @include transition(opacity 300ms ease);
+
+    &:hover {
+      opacity: 0.5;
+    }
+
+
+    img {
+      width: 25px;
+      display: block;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .text {
+      font-size: 20px;
+      line-height: 1em;
+      position: relative;
+      top: 2px;
+      font-weight: 800;
+      display: block;
+      float: left;
+    }
+  }
+}
+
+
+
+
+
+.center-outer,
+.center-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.center-outer {
+  display: table;
+}
+.center-inner {
+  display: table-cell;
+}
+
+
+.responsive-image {
+  display: block;
+}
+
+
+
+
+.project-detail,
+.project-detail-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+.template-page,
+.template-home,
+.template-rotz_submit {
+  #content-inner {
+    padding-top: 5%;
+  }
+}
+
+
+
+.template-home,
+.template-page {
+  p {
+    font-size: 15px;
+    line-height: 1.4em;
+  }
+}
+
+
+.template-home {
+  .projects {
+    padding-top: 5%;
+  }
+}
+
+
+.textblock {
+  max-width: 60em;
+  margin: 0 auto;
+  padding-bottom: 4%;
+
+  p {
+    text-align: justify;
+
+    &.center {
+      text-align: center;
+    }
+  }
+}

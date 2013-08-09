@@ -1,0 +1,71 @@
+form {
+  padding: 40px 0;
+}
+
+label,
+input,
+textarea {
+  padding: 10px;
+  font-size: 15px;
+  color: #262626;
+}
+
+input,
+textarea {
+  border: 1px solid #262626;
+}
+
+input[type="submit"] {
+  background: #262626;
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  min-width: 0 !important;
+
+  &:checked {
+    background: #000;
+  }
+}
+
+
+#login {
+  label,
+  input {
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  input {
+    margin-bottom: 30px;
+  }
+}
+
+
+
+form {
+  .field {
+    margin-top: 20px;
+    @include clearfix();
+
+    input {
+      min-width: 300px;
+    }
+
+    label {
+      display: block;
+      float: none;
+    }
+  }
+}
+
+
+
+
+.center {
+  text-align: center;
+}

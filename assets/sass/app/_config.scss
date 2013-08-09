@@ -1,0 +1,33 @@
+$columns: 12 !default;
+$gutter: 20 !default;
+$width: 60 !default;
+
+$gutter-wide: 30 !default;
+$width-wide: 70 !default;
+
+$gutter-tablet: 42 !default;
+$width-tablet: 20 !default;
+
+$breakpoint-wide: 1300px !default;
+$breakpoint-tablet: 980px !default;
+$breakpoint-mobile: 768px !default;
+
+
+
+$color: #fff !default;
+$color-dark: #464646 !default;
+$background: #ebebeb !default;
+$background-dark: #464646 !default;
+
+$hover: #999 !default;
+$active: $hover !default;
+$font-family: "Lato", Helvetica, Arial, sans-serif !default;
+$font-size: 12px !default;
+$line-height: 1.4em !default;
+
+
+
+$action-opacity: 1 - 0.26 !default;
+$grey: #a6a6a6 !default;
+$dark-grey: #575757 !default;
+$highlight: #54bdff !default;

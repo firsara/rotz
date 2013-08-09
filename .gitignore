@@ -1,0 +1,17 @@
+.DS_Store
+.sass-cache
+application/config/database.php
+
+config.rb
+
+data/*
+!data/README.md
+
+cache/*
+!cache/README.md
+
+application/cache/*
+!application/cache/README.md
+
+application/logs/*
+!application/logs/README.md

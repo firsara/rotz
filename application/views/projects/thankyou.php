@@ -1,0 +1,1 @@
+<h1 class="center"><span class="uppercase">Danke!</span> <br><small>Der Rotz sollte bald hier zu sehen sein!</small></h1>
