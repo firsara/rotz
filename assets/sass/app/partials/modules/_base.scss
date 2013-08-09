@@ -246,6 +246,7 @@ body {
   }
 
   .hate {
+    float: left;
     display: block;
     padding: 30px;
     padding-top: 10px;
@@ -275,6 +276,13 @@ body {
       display: block;
       float: left;
     }
+  }
+
+  .date {
+    padding: 30px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 20px;
   }
 }
 

@@ -39,6 +39,7 @@
             <img src="assets/images/hate.png" alt="Hate">
             <span class="text"><?php echo $project->hates()->count(); ?></span>
           </a>
+          <h6 class="date float-right">vom <?php echo date('d. M Y', strtotime($project->created)); ?></h6>
         </div>
       </a>
     </article>
