@@ -4,7 +4,7 @@
     <p class="center">Der Rotz muss wohl auch rein</p>
 
     <h2>Beschwerden</h2>
-    <p class="center">Einfach eine <a href="mailto:info@madebyfibb.com?subject=Neuer Rotz">Mail schicken</a>.</p>
+    <p class="center">Einfach eine <a href="mailto:rotz@madebyfibb.com?subject=Beschwerde">Mail schicken</a>.</p>
 
     <h2>Haftung</h2>
     <p>Trotz achtsamer Kontrolle der Inhalte kann keine Haftung für externe Links übernommen werden.
