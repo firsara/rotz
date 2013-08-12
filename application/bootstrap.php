@@ -105,6 +105,7 @@ ini_set('memory_limit', '128M');
  * - boolean  caching     enable or disable internal caching                 FALSE
  * - boolean  expose      set the X-Powered-By header                        FALSE
  */
+
 Kohana::init(array(
 	'base_url' => preg_replace('/[^\/]+$/','',$_SERVER['SCRIPT_NAME']),
 	//'caching'  => Kohana::$environment === Kohana::PRODUCTION,
@@ -150,7 +151,16 @@ Kohana::modules(array(
 
 
 Database::$default = Kohana::$environment;
-error_reporting((Kohana::$environment === Kohana::PRODUCTION) ? 0 : E_ALL | E_STRICT);
+
+if (Kohana::$environment === Kohana::PRODUCTION)
+{
+	error_reporting(0);
+}
+else
+{
+	error_reporting(E_ALL | E_STRICT);
+}
+//error_reporting((Kohana::$environment === Kohana::PRODUCTION) ? 0 : E_ALL | E_STRICT);
 
 /**
  * Set the routes. Each route must have a minimum of a name, a URI and a set of
