@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  
+
   <title><?php echo $title; ?></title>
   <base data-state="<?php echo URL::base(); ?>" href="<?php echo URL::http_base(); ?>">
 
@@ -121,11 +121,11 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-40733628-3', 'rotzprojekt.com');
+ga('create', 'UA-40733628-3', 'rotz.madebyfibb.com');
 ga('send', 'pageview');
 </script>
 
 <?php endif; ?>
-  
+
 </body>
 </html>

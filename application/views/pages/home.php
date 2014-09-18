@@ -1,5 +1,5 @@
 <div class="center">
-  <h1><span class="uppercase">Rotzprojekt.com</span> <br>
+  <h1><span class="uppercase">rotz.madebyfibb.com</span> <br>
     <small>Für die tollen Kehrseiten des Webs</small></h1>
 
   <p>Hier findest du die Seiten, die sonst auf keiner anderen CSS-Gallery Platz finden.</p>
@@ -7,7 +7,7 @@
 </div>
 
 
-<?php 
+<?php
 $projects = ORM::factory('Project')->where('active', '=', '1')->order_by('id', 'desc')->find_all();
 echo View::factory('projects/index', array('projects' => $projects))->render();
 ?>
